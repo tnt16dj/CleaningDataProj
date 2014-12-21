@@ -49,3 +49,7 @@ Run_analysis.r is a script that takes a raw dataset of human activity recognitio
 21. Write the finalize tidyData data.frame to a tidyData.txt file in the working directory.
 22. Free up memory of all obsolete objects.
 23. Read the tidyData.txt file into R for further analysis by the end user.  Enjoy!
+
+## run_analysis.r - final output
+
+tidyData.txt contains all columns pertaining to mean or standard deviation measurements as per the requirements of the course project.  Each column in the tidyData dataset represents a different measurement that was observed.  Each measurement is grouped by the Subject that generated the measurement and the Activity the Subject was performing during the measurement (i.e. Laying, Walking, etc...).  All of the measurment columns represent the average (mean) of all observations of the given measurement (i.e. tBodyAcc.mean(), etc...) for the given Subject and Activity.
