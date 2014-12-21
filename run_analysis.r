@@ -38,7 +38,7 @@ colnames(trainData) <- columnHeaders[,2]
 
 
 ## subset only those columns related to mean or std...
-targetColumns <- grep("mean|std", columnHeaders[, 2])
+targetColumns <- grep("mean()|std()", columnHeaders[, 2])
 ## apply the targetColumns to the testData and trainData set to arrive a desired subset
 testData <- testData[,targetColumns]
 trainData <- trainData[,targetColumns]
@@ -99,8 +99,10 @@ tidyData <- select(tidyData,-Activity_ID)
 ## write out the tidyData dataset
 write.table(tidyData,file="tidyData.txt")
 
+
 ## free up memory by removing mergeData & tidyData
 rm(mergeData,tidyData)
+
 
 ## load the tidyData.txt file into memory for user review
 fileurl <- "./tidydata.txt"
