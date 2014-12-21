@@ -21,5 +21,5 @@ The relevant files that will be used by run_analysis.r are:
 ## run_analysis.r - using the script
 
 Requirements:
-1. ** The dplyr package is installed ** before running the script.  Use install.package("dplyr") to install
-2. Set your working directory to the directory where you would like the raw and output data to reside.  Use setwd("your_path") at the R Terminal to set.
+* ** The dplyr package is installed ** before running the script.  Use install.package("dplyr") to install
+* Set your working directory to the directory where you would like the raw and output data to reside.  Use setwd("your_path") at the R Terminal to set.
